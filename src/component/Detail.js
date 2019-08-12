@@ -19,35 +19,23 @@ const Wrapper = styled.section`
 const Detail = ({
   title,
   director,
-  producer,
+  episode,
   description,
-  characters,
-  planets,
-  species,
-  starships,
-  vehicles,
+  characters
 }) => (
   <Wrapper>
-    <DetailHeader title={title} director={director} producer={producer} />
+    <DetailHeader title={title} director={director} episode={episode} />
     <DetailDescription description={description} />
     <DetailList label='Characters' list={characters} />
-    <DetailList label='Planets' list={planets} />
-    <DetailList label='Species' list={species} />
-    <DetailList label='Starships' list={starships} />
-    <DetailList label='Vehicles' list={vehicles} />
   </Wrapper>
 );
 
 Detail.propTypes = {
   title: PropTypes.string,
   director: PropTypes.string,
-  producer: PropTypes.string,
+  episode: PropTypes.number,
   description: PropTypes.string,
-  characters: PropTypes.array,
-  planets: PropTypes.array,
-  species: PropTypes.array,
-  starships: PropTypes.array,
-  vehicles: PropTypes.array,
+  characters: PropTypes.array
 };
 
 export default Detail;

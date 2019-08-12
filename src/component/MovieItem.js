@@ -59,7 +59,7 @@ const MovieContent = styled.div`
   transform: perspective(1px) translateZ(0);
   transition-duration: 0.3s;
   transition-property: box-shadow;
-  box-shadow: 0px 0px 10px 3px transparent, 0px 0px 10px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px 1px #D15441, 0px 0px 5px rgba(0, 0, 0, 0);
   border-radius: 0.3rem;
 
   &:hover {
@@ -67,11 +67,11 @@ const MovieContent = styled.div`
   }
 `;
 
-const MovieItem = ({ id, title, description, episode, releaseDate }) => (
+const MovieItem = ({ id, title, episode, director }) => (
   <ColCustom>
     <MovieContent>
-      <MovieHeader id={id} title={title} releaseDate={releaseDate} episode={episode} />
-      <MovieDescription description={description} />
+      <MovieHeader id={id} title={title} />
+      <MovieDescription episode={episode} director={director}/>
       <MovieLink id={id} />
     </MovieContent>
   </ColCustom>
@@ -80,9 +80,8 @@ const MovieItem = ({ id, title, description, episode, releaseDate }) => (
 MovieItem.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-
-  releaseDate: PropTypes.string.isRequired,
+  episode: PropTypes.number.isRequired,
+  director: PropTypes.string.isRequired
 };
 
 export default MovieItem;

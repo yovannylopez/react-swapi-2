@@ -1,10 +1,8 @@
-// Dependencies core
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-// Assets
 import { ReactComponent as BackLogo } from '../shared/assets/icon/back.svg';
 
 const Header = styled.header`
@@ -52,24 +50,24 @@ const Team = styled.p`
   }
 `;
 
-const DetailHeader = ({ title, director, producer }) => (
+const DetailHeader = ({ title, director, episode }) => (
   <Header>
     <Back>
       <Link to='/'>
         <BackLogo />
-        &ensp;Back to list
+        Home
       </Link>
     </Back>
-    <Title>{title}</Title>
-    <Team>Director : {director}</Team>
-    <Team>Producer : {producer}</Team>
+    <Title>Movie: {title}</Title>
+    <Team>Director: {director}</Team>
+    <Team>Episode: {episode}</Team>
   </Header>
 );
 
 DetailHeader.propTypes = {
   title: PropTypes.string,
   director: PropTypes.string,
-  producer: PropTypes.string,
+  episode: PropTypes.number,
 };
 
 export default DetailHeader;

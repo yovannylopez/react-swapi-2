@@ -1,9 +1,7 @@
-// Dependencies core
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-// Styles
 import { Wrapper, Label } from '../shared/styles/Detail';
 
 const WrapperCustom = styled(Wrapper)`

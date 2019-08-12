@@ -14,13 +14,18 @@ const MovieLinkStyle = styled.p`
     color: currentColor;
     text-decoration: none;
     cursor: pointer;
+
+    &:hover {
+      color: #2098d1;
+      text-decoration: underline;
+    }
   }
 `;
 
 const MovieLink = ({ id }) => (
   <MovieLinkStyle>
     <Link className='btn' to={`/movie/${id}`}>
-      More info
+      View Characters
     </Link>
   </MovieLinkStyle>
 );

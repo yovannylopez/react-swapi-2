@@ -2,7 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const MovieDescriptionStyle = styled.p`
+const MovieDescriptionStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.7rem;
+`;
+
+const MovieEpisode = styled.div`
   font-family: inherit;
   color: #fff;
   overflow-wrap: break-word;
@@ -10,14 +16,19 @@ const MovieDescriptionStyle = styled.p`
   margin-bottom: 2.5rem;
 `;
 
-const MovieDescription = ({ description }) => (
+const MovieDescription = ({ episode, director }) => (
   <MovieDescriptionStyle>
-    {description.substring(0, 260)}...
+    <MovieEpisode>
+      <p><strong>Episode:</strong> {episode}</p>
+      <br/>
+      <p><strong>Director:</strong> {director}</p>
+    </MovieEpisode>
   </MovieDescriptionStyle>
 );
 
 MovieDescription.propTypes = {
-  description: PropTypes.string.isRequired,
+  episode: PropTypes.number.isRequired,
+  director: PropTypes.string.isRequired
 };
 
 export default MovieDescription;

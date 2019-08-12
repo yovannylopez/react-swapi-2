@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-import formatDate from '../shared/helpers/formatDate';
-
 const MovieHeaderStyle = styled.div`
   display: flex;
   flex-direction: column;
@@ -12,7 +10,7 @@ const MovieHeaderStyle = styled.div`
 `;
 
 const MovieTitle = styled.h3`
-  font-family: 'Star Jedi', 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2.2rem;
   letter-spacing: 2px;
 
@@ -20,35 +18,27 @@ const MovieTitle = styled.h3`
     color: currentColor;
     text-decoration: none;
     cursor: pointer;
+
+    &:hover {
+      color: #2098d1;
+      text-decoration: underline;
+    }
   }
 `;
 
-const MovieEpisode = styled.span`
-  color: #cac7c8;
-  font-size: 1.4rem;
-`;
-
-const MovieDate = styled.span`
-  color: #cac7c8;
-  font-size: 1.4rem;
-`;
-
-const MovieHeader = ({ id, title, episode, releaseDate }) => (
+const MovieHeader = ({ id, title }) => (
   <MovieHeaderStyle>
     <MovieTitle>
       <Link className='btn' to={`/movie/${id}`}>
         Movie: {title}
       </Link>
     </MovieTitle>
-    <MovieEpisode>Episode: {episode}</MovieEpisode>
-    <MovieDate>Date: {formatDate(releaseDate)}</MovieDate>
   </MovieHeaderStyle>
 );
 
 MovieHeader.propTypes = {
   id: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
-  releaseDate: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
 };
 
 export default MovieHeader;

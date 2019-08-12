@@ -1,8 +1,6 @@
-// Dependencies
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Styles
 import { Wrapper, Label, Text } from '../shared/styles/Detail';
 
 const DetailDescription = ({ description }) => (
@@ -13,7 +11,7 @@ const DetailDescription = ({ description }) => (
 );
 
 DetailDescription.propTypes = {
-  description: PropTypes.string,
+  description: PropTypes.string
 };
 
 export default DetailDescription;
