@@ -6,14 +6,14 @@ import PropTypes from 'prop-types';
 import { Wrapper, Label, Text } from '../shared/styles/Detail';
 
 const DetailDescription = ({ description }) => (
-	<Wrapper>
-		<Label>Description</Label>
-		<Text>{description}</Text>
-	</Wrapper>
+  <Wrapper>
+    <Label>Description</Label>
+    <Text>{description}</Text>
+  </Wrapper>
 );
 
 DetailDescription.propTypes = {
-	description: PropTypes.string
+  description: PropTypes.string,
 };
 
 export default DetailDescription;
