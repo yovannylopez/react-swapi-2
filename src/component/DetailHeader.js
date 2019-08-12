@@ -6,13 +6,13 @@ import PropTypes from 'prop-types';
 import { ReactComponent as BackLogo } from '../shared/assets/icon/back.svg';
 
 const Header = styled.header`
-  display: flex;
   align-items: center;
-  flex-direction: column;
-  width: 100%;
   color: #fff;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 3rem;
   text-align: center;
+  width: 100%;
 `;
 
 const Back = styled.div`
@@ -20,26 +20,26 @@ const Back = styled.div`
   margin-bottom: 1.5rem;
 
   a {
+    align-items: center;
+    color: #9d9d9d;
+    display: flex;
     font-family: inherit;
     font-size: 1.6rem;
-    color: #9d9d9d;
     text-decoration: none;
-    display: flex;
-    align-items: center;
   }
 
   svg {
     fill: #9d9d9d;
-    width: 1.6rem;
     height: 1.6rem;
+    width: 1.6rem;
   }
 `;
 
 const Title = styled.h2`
   font-family: 'Star Jedi', 'Open Sans', sans-serif;
   font-size: 4rem;
-  margin-bottom: 1.5rem;
   letter-spacing: 2px;
+  margin-bottom: 1.5rem;
 `;
 
 const Team = styled.p`

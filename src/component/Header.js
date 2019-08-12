@@ -4,15 +4,15 @@ import styled from 'styled-components';
 import { ReactComponent as Logo } from '../shared/assets/icon/logo.svg';
 
 const HeaderStyle = styled.header`
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   height: 13rem;
+  justify-content: center;
 
   .logo {
     fill: #ffe81f;
-    width: 100%;
     max-width: 45rem;
+    width: 100%;
   }
 `;
 

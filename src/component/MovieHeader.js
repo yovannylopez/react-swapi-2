@@ -16,8 +16,8 @@ const MovieTitle = styled.h3`
 
   .btn {
     color: currentColor;
-    text-decoration: none;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
       color: #2098d1;

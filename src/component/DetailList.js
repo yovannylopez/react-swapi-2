@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 import { Wrapper, Label } from '../shared/styles/Detail';
 
 const WrapperCustom = styled(Wrapper)`
-  padding-top: 3rem;
   border-top: 2px solid #3c3c3c;
+  padding-top: 3rem;
 `;
 
 const WrapperList = styled.ul`
@@ -16,10 +16,10 @@ const WrapperList = styled.ul`
 `;
 
 const ListItem = styled.li`
-  width: 100%;
-  position: relative;
   flex: 0 0 100%;
   max-width: 100%;
+  position: relative;
+  width: 100%;
 
   @media (min-width: 48em) {
     flex: 0 0 calc(100% / 2);

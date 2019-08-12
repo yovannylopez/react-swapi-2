@@ -11,9 +11,9 @@ const MovieDescriptionStyle = styled.div`
 const MovieEpisode = styled.div`
   font-family: inherit;
   color: #fff;
+  margin-bottom: 2.5rem;
   overflow-wrap: break-word;
   white-space: normal;
-  margin-bottom: 2.5rem;
 `;
 
 const MovieDescription = ({ episode, director }) => (

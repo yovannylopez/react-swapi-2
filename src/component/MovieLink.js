@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const MovieLinkStyle = styled.p`
-  padding-top: 1.2rem;
-  font-size: 1.4rem;
-  text-transform: capitalize;
   border-top: 2px solid #8e2e2e;
   color: #ffe81f;
+  font-size: 1.4rem;
+  padding-top: 1.2rem;
+  text-transform: capitalize;
 
   .btn {
     color: currentColor;
-    text-decoration: none;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
       color: #2098d1;
@@ -24,7 +24,7 @@ const MovieLinkStyle = styled.p`
 
 const MovieLink = ({ id }) => (
   <MovieLinkStyle>
-    <Link className='btn' to={`/movie/${id}`}>
+    <Link className='btn' to={`/character/${id}`}>
       View Characters
     </Link>
   </MovieLinkStyle>

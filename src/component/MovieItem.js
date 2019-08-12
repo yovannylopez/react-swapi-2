@@ -51,16 +51,16 @@ const ColCustom = styled(Col)`
 `;
 
 const MovieContent = styled.div`
-  display: block;
   background-color: #232323;
+  border-radius: 0.3rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+  box-shadow: 0 0 5px 1px #D15441, 0px 0px 5px rgba(0, 0, 0, 0);
   color: #fff;
+  display: block;
+  padding: 2rem;
   transform: perspective(1px) translateZ(0);
   transition-duration: 0.3s;
   transition-property: box-shadow;
-  box-shadow: 0 0 5px 1px #D15441, 0px 0px 5px rgba(0, 0, 0, 0);
-  border-radius: 0.3rem;
 
   &:hover {
     box-shadow: 0px 0px 10px 3px #2098d1, 0px 0px 10px rgba(0, 0, 0, 0);
