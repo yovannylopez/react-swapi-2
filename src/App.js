@@ -1,21 +1,25 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component, Fragment } from 'react';
+import { Switch, Route, withRouter } from 'react-router-dom';
+
+import Header from './components/Header';
+import MovieList from './containers/MovieList';
+import MovieDetail from './containers/MovieDetail';
+
+import GlobalStyle from './shared/styles/Global';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<Fragment>
+				<Header />
+				<Switch>
+					<Route path="/movie/:id" component={MovieDetail} />
+					<Route path="/" component={MovieList} />
+				</Switch>
+				<GlobalStyle />
+			</Fragment>
+		);
+	}
 }
 
-export default App;
+export default withRouter(App);
