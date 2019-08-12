@@ -48,13 +48,6 @@ const ListItem = styled.li`
   }
 `;
 
-const Article = styled.article`
-background: yellow;
-  height: auto;
-  width: 50px;
-
-`;
-
 const DetailList = ({ label, list }) => (
   <WrapperCustom>
     <Label>{label}</Label>
@@ -70,11 +63,10 @@ const DetailList = ({ label, list }) => (
               {data.films.map((film, i) => (
                 <ul key={i}>
                   {console.log('estos' + film)}
-                  <li>{film}</li>
+                  <li>{data.films}</li>
                 </ul>
               ))}
             </p>
-
           </ListItem>
         ))}
       </WrapperList>

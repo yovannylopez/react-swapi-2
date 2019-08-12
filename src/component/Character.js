@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 import DetailHeader from './DetailHeader';
 import DetailList from './DetailList';
+import Filter from './Filter';
 
 const Wrapper = styled.section`
   background-color: rgba(22, 22, 22, 0.87);
@@ -23,6 +24,7 @@ const Detail = ({
 }) => (
   <Wrapper>
     <DetailHeader title={title} director={director} episode={episode}/>
+    <Filter/>
     <DetailList label='Characters' list={characters} />
   </Wrapper>
 );
