@@ -24,21 +24,17 @@ class Filter extends React.Component {
     render() {
         const contactsall = this.state.contacts
         const filteredContact = contactsall.filter(contact => {
-
             return contact.gender.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
-
         })
 
         return (
             <div>
                 <input type="text" value={this.state.search} onChange={(e) => this.SearchVal(e)} placeholder="Search by Gender or Eye color " />
-
                 <ul>
                     {
                         filteredContact.map(contact => <li key={contact.id}>{contact.gender} {contact.eyes}</li>)
                     }
                 </ul>
-
             </div>
         );
     }
