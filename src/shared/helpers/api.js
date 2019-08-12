@@ -18,7 +18,6 @@ export const getSingleMovie = async id => {
   const resCharacters = resJson.characters.slice(0, 10).map(url =>
     fetch(url)
       .then(data => data.json())
-      // .then(c => c.name),
   );
 
   const characters = await Promise.all(resCharacters);

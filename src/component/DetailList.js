@@ -48,6 +48,13 @@ const ListItem = styled.li`
   }
 `;
 
+const Article = styled.article`
+background: yellow;
+  height: auto;
+  width: 50px;
+
+`;
+
 const DetailList = ({ label, list }) => (
   <WrapperCustom>
     <Label>{label}</Label>
@@ -58,8 +65,16 @@ const DetailList = ({ label, list }) => (
             <p>Name: {data.name}</p>
             <p>Gender: {data.gender}</p>
             <p>Eyes color: {data.eye_color}</p>
-            {/* TODO: Cargar las películas de cada personaje. */}
-            {/* <span>Films: {data.films}</span> */}
+            <p>Films:
+              {/* TODO: Cargar las películas de cada personaje. */}
+              {data.films.map((film, i) => (
+                <ul key={i}>
+                  {console.log('estos' + film)}
+                  <li>{film}</li>
+                </ul>
+              ))}
+            </p>
+
           </ListItem>
         ))}
       </WrapperList>
