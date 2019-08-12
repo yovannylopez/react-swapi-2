@@ -12,13 +12,13 @@ import MovieLink from './MovieLink';
 import { Col } from '../shared/styles/Grid';
 
 // Assets
-import bgCardOne from '../shared/assets/images/bg-card-1.png';
-import bgCardTwo from '../shared/assets/images/bg-card-2.png';
-import bgCardThree from '../shared/assets/images/bg-card-3.png';
-import bgCardFour from '../shared/assets/images/bg-card-4.png';
-import bgCardFive from '../shared/assets/images/bg-card-5.png';
-import bgCardSix from '../shared/assets/images/bg-card-6.png';
-import bgCardSeven from '../shared/assets/images/bg-card-7.png';
+import bgCardOne from '../shared/assets/images/bg-card-1.jpg';
+import bgCardTwo from '../shared/assets/images/bg-card-2.jpg';
+import bgCardThree from '../shared/assets/images/bg-card-3.jpg';
+import bgCardFour from '../shared/assets/images/bg-card-4.jpg';
+import bgCardFive from '../shared/assets/images/bg-card-5.jpg';
+import bgCardSix from '../shared/assets/images/bg-card-6.jpg';
+import bgCardSeven from '../shared/assets/images/bg-card-7.jpg';
 
 const ColCustom = styled(Col)`
   &:nth-child(1) > * {
