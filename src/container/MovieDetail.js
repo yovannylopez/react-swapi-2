@@ -18,13 +18,7 @@ class Movie extends Component {
     director: null,
     episode: null,
     description: null,
-    planets: [],
-    producer: null,
-    releaseDate: null,
-    species: [],
-    starships: [],
     title: null,
-    vehicles: [],
   };
 
   toggleLoading = () => {
@@ -49,11 +43,6 @@ class Movie extends Component {
       episode,
       characters,
       description,
-      planets,
-      producer,
-      species,
-      starships,
-      vehicles,
     } = this.state;
     return (
       <Container>
@@ -63,14 +52,9 @@ class Movie extends Component {
           <Detail
             title={title}
             director={director}
-            producer={producer}
             description={description}
             episode={episode}
             characters={characters}
-            planets={planets}
-            species={species}
-            starships={starships}
-            vehicles={vehicles}
           />
         )}
       </Container>

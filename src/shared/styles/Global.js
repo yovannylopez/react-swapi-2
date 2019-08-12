@@ -5,14 +5,6 @@ import Background from '../assets/images/background.png';
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-  @font-face {
-    font-family: 'Star Jedi';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Star Jedi'), local('StarJedi'),
-      url('../component/assets/fonts/Starjedi.ttf') format('truetype');
-  }
-
   *,
   *::before,
   *::after {
