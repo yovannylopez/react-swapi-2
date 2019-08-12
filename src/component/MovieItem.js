@@ -67,10 +67,10 @@ const MovieContent = styled.div`
   }
 `;
 
-const MovieItem = ({ id, title, description, releaseDate }) => (
+const MovieItem = ({ id, title, description, episode, releaseDate }) => (
   <ColCustom>
     <MovieContent>
-      <MovieHeader id={id} title={title} releaseDate={releaseDate} />
+      <MovieHeader id={id} title={title} releaseDate={releaseDate} episode={episode} />
       <MovieDescription description={description} />
       <MovieLink id={id} />
     </MovieContent>
@@ -81,6 +81,7 @@ MovieItem.propTypes = {
   id: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+
   releaseDate: PropTypes.string.isRequired,
 };
 

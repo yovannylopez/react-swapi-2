@@ -5,6 +5,7 @@ export const getAllMovie = async () => {
     id: parseFloat(movie.url.slice(27, 28)),
     title: movie.title,
     description: movie.opening_crawl,
+    episode: movie.episode_id,
     releaseDate: movie.release_date,
   }));
   return editedMovieList;
@@ -46,8 +47,10 @@ export const getSingleMovie = async id => {
   const data = {
     characters,
     director: resJson.director,
+
     description: resJson.opening_crawl,
     planets,
+    episode: resJson.episode_id,
     producer: resJson.producer,
     releaseDate: resJson.release_date,
     species,

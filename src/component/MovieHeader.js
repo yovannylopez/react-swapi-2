@@ -23,19 +23,25 @@ const MovieTitle = styled.h3`
   }
 `;
 
+const MovieEpisode = styled.span`
+  color: #cac7c8;
+  font-size: 1.4rem;
+`;
+
 const MovieDate = styled.span`
   color: #cac7c8;
   font-size: 1.4rem;
 `;
 
-const MovieHeader = ({ id, title, releaseDate }) => (
+const MovieHeader = ({ id, title, episode, releaseDate }) => (
   <MovieHeaderStyle>
     <MovieTitle>
       <Link className='btn' to={`/movie/${id}`}>
-        {title}
+        Movie: {title}
       </Link>
     </MovieTitle>
-    <MovieDate>{formatDate(releaseDate)}</MovieDate>
+    <MovieEpisode>Episode: {episode}</MovieEpisode>
+    <MovieDate>Date: {formatDate(releaseDate)}</MovieDate>
   </MovieHeaderStyle>
 );
 

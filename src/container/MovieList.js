@@ -43,6 +43,7 @@ class MovieList extends Component {
                 key={movie.id}
                 id={movie.id}
                 description={movie.description}
+                episode={movie.episode}
                 releaseDate={movie.releaseDate}
                 title={movie.title}
               />

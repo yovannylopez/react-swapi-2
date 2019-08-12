@@ -16,6 +16,7 @@ class Movie extends Component {
     loading: false,
     characters: [],
     director: null,
+    episode: null,
     description: null,
     planets: [],
     producer: null,
@@ -45,6 +46,7 @@ class Movie extends Component {
       loading,
       title,
       director,
+      episode,
       characters,
       description,
       planets,
@@ -63,6 +65,7 @@ class Movie extends Component {
             director={director}
             producer={producer}
             description={description}
+            episode={episode}
             characters={characters}
             planets={planets}
             species={species}
