@@ -8,48 +8,6 @@ import MovieHeader from './MovieHeader';
 import MovieDescription from './MovieDescription';
 import MovieLink from './MovieLink';
 
-// Styles
-import { Col } from '../shared/styles/Grid';
-
-// Assets
-import bgCardOne from '../shared/assets/images/bg-card-1.png';
-import bgCardTwo from '../shared/assets/images/bg-card-2.png';
-import bgCardThree from '../shared/assets/images/bg-card-3.png';
-import bgCardFour from '../shared/assets/images/bg-card-4.png';
-import bgCardFive from '../shared/assets/images/bg-card-5.png';
-import bgCardSix from '../shared/assets/images/bg-card-6.png';
-import bgCardSeven from '../shared/assets/images/bg-card-7.png';
-
-const ColCustom = styled(Col)`
-	&:nth-child(1) > * {
-		background: url(${bgCardOne});
-	}
-
-	&:nth-child(2) > * {
-		background: url(${bgCardTwo});
-	}
-
-	&:nth-child(3) > * {
-		background: url(${bgCardThree});
-	}
-
-	&:nth-child(4) > * {
-		background: url(${bgCardFour});
-	}
-
-	&:nth-child(5) > * {
-		background: url(${bgCardFive});
-	}
-
-	&:nth-child(6) > * {
-		background: url(${bgCardSix});
-	}
-
-	&:nth-child(7) > * {
-		background: url(${bgCardSeven});
-	}
-`;
-
 const MovieContent = styled.div`
 	display: block;
 	background-color: #232323;
