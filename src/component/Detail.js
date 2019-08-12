@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 import DetailHeader from './DetailHeader';
 import DetailDescription from './DetailDescription';
-import DetailList from './DetailList';
 
 const Wrapper = styled.section`
   background-color: rgba(22, 22, 22, 0.87);
@@ -21,12 +20,10 @@ const Detail = ({
   director,
   episode,
   description,
-  characters
 }) => (
   <Wrapper>
     <DetailHeader title={title} director={director} />
       <DetailDescription description={description} episode={episode}/>
-    <DetailList label='Characters' list={characters} />
   </Wrapper>
 );
 
@@ -35,7 +32,6 @@ Detail.propTypes = {
   director: PropTypes.string,
   episode: PropTypes.number,
   description: PropTypes.string,
-  characters: PropTypes.array
 };
 
 export default Detail;

@@ -11,7 +11,7 @@ body {
 }
 
 .intro {
-	animation: intro 3s ease-out 1s;
+	animation: intro 5s ease-out 1s;
 	color: rgb(75, 213, 238);
 	left: 35%;
 	font-size: 200%;
