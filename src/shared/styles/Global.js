@@ -8,9 +8,9 @@ const GlobalStyle = createGlobalStyle`
   *,
   *::before,
   *::after {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
   }
 
   html {
@@ -29,11 +29,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background-color: #232323;
+    color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     overflow-y: scroll;
-    color: #fff;
-    background-color: #232323;
   }
 
   #root {

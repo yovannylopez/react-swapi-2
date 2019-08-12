@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  width: 100%;
 
   /* 576px */
   @media (min-width: 36em) {
@@ -30,20 +30,20 @@ export const Container = styled.div`
 
 export const Row = styled.div`
   display: flex;
+  flex-wrap: wrap;
   margin-left: -1.5rem;
   margin-right: -1.5rem;
-  flex-wrap: wrap;
 `;
 
 export const Col = styled.div`
-  width: 100%;
+  flex: 0 0 100%;
   position: relative;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  flex: 0 0 100%;
   max-width: 100%;
+  width: 100%;
 
   /* 768px */
   @media (min-width: 48em) {

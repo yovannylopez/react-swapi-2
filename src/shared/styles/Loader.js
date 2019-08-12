@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import { ReactComponent as LoaderLogo } from '../assets/icon/loader.svg';
 
 const Wrapper = styled.div`
-  width: 100%;
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 70vh;
+  width: 100%;
 
   .loader-logo {
     animation: loader-spin infinite 2.5s linear;

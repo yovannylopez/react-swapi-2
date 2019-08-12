@@ -50,7 +50,7 @@ const Team = styled.p`
   }
 `;
 
-const DetailHeader = ({ title, director, episode }) => (
+const DetailHeader = ({ title, director }) => (
   <Header>
     <Back>
       <Link to='/'>
@@ -60,14 +60,12 @@ const DetailHeader = ({ title, director, episode }) => (
     </Back>
     <Title>Movie: {title}</Title>
     <Team>Director: {director}</Team>
-    <Team>Episode: {episode}</Team>
   </Header>
 );
 
 DetailHeader.propTypes = {
   title: PropTypes.string,
   director: PropTypes.string,
-  episode: PropTypes.number,
 };
 
 export default DetailHeader;

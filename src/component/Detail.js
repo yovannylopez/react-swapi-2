@@ -24,8 +24,8 @@ const Detail = ({
   characters
 }) => (
   <Wrapper>
-    <DetailHeader title={title} director={director} episode={episode} />
-    <DetailDescription description={description} />
+    <DetailHeader title={title} director={director} />
+      <DetailDescription description={description} episode={episode}/>
     <DetailList label='Characters' list={characters} />
   </Wrapper>
 );
