@@ -14,7 +14,8 @@ export const getAllMovie = async () => {
 export const getSingleMovie = async id => {
   const res = await fetch(`https://swapi.co/api/films/${id}`);
   const resJson = await res.json();
-  const resCharacters = resJson.characters.map(url =>
+
+  const resCharacters = resJson.characters.slice(0, 10).map(url =>
     fetch(url)
       .then(data => data.json())
       // .then(c => c.name),

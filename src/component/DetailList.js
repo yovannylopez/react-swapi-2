@@ -58,6 +58,7 @@ const DetailList = ({ label, list }) => (
             <p>Name: {data.name}</p>
             <p>Gender: {data.gender}</p>
             <p>Eyes color: {data.eye_color}</p>
+            {/* TODO: Cargar las películas de cada personaje. */}
             {/* <span>Films: {data.films}</span> */}
           </ListItem>
         ))}
