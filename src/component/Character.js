@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 import DetailHeader from './DetailHeader';
 import DetailList from './DetailList';
-import Filter from './Filter';
 
 const Wrapper = styled.section`
   background-color: rgba(22, 22, 22, 0.87);
@@ -16,7 +15,7 @@ const Wrapper = styled.section`
   width: 100%;
 `;
 
-const Detail = ({
+const Character = ({
   title,
   director,
   episode,
@@ -24,16 +23,15 @@ const Detail = ({
 }) => (
   <Wrapper>
     <DetailHeader title={title} director={director} episode={episode}/>
-    <Filter/>
     <DetailList label='Characters' list={characters} />
   </Wrapper>
 );
 
-Detail.propTypes = {
+Character.propTypes = {
   title: PropTypes.string,
   director: PropTypes.string,
   episode: PropTypes.number,
   characters: PropTypes.array
 };
 
-export default Detail;
+export default Character;

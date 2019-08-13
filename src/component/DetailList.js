@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useReducer, useEffect } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import { Wrapper, Label } from '../shared/styles/Detail';
+
 
 const WrapperCustom = styled(Wrapper)`
   border-top: 2px solid #3c3c3c;
